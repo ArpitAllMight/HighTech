@@ -1,0 +1,37 @@
+<header id="header">
+  <div class="container">
+    <a class="logo">HighTech</a>
+    <nav>
+      <ul>
+        <li><a class="anchorLink">home</a></li>
+        <li><a class="anchorLink">about</a></li>
+        <li><a class="anchorLink">what we do</a></li>
+        <li><a class="anchorLink">portfolio</a></li>
+        <li><a class="anchorLink">login</a></li>
+      </ul>
+    </nav>
+    <a class="search-icon">
+      <i class="fa-sharp fa-solid fa-magnifying-glass fa-beat"></i>
+    </a>
+    <div id="hamBurger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<script>
+  $(document).ready(function () {
+    $("#hamBurger").click(function () {
+      $("header nav").toggleClass("active");
+      $(this).toggleClass("active");
+    });
+    $(".anchorLink").click(function () {
+      $("#hamBurger, header nav").removeClass("active");
+    });
+    $("header a.logo").click(function () {
+      $("#hamBurger, header nav").removeClass("active");
+    });
+  });
+</script>

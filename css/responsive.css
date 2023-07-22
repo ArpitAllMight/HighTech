@@ -1,0 +1,225 @@
+@media only screen and (max-width: 1024px) {
+  #mainTab .tabContent {
+    top: 45px;
+  }
+}
+@media only screen and (max-width: 885px) {
+  header nav {
+    transition: 0.3s all ease;
+    position: fixed;
+    top: 45px;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background: white;
+    padding: 25px 15px;
+  }
+  header nav.active {
+    right: 0;
+  }
+  #hamBurger span {
+    transition: 0.3s all ease;
+  }
+  #hamBurger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #hamBurger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #hamBurger.active span:nth-child(2) {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  header nav ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  header nav ul li {
+    width: 100%;
+    transition: 0.3s all ease;
+  }
+  header nav ul li:hover {
+    transform: translateX(10px);
+    width: 95%;
+  }
+  header nav ul li a {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: white;
+    color: black;
+  }
+  header a.search-icon {
+    display: none;
+  }
+  div#hamBurger {
+    display: block;
+  }
+  section#about .row .icon {
+    margin-top: 20px;
+  }
+  section#info {
+    padding: 30px 0;
+  }
+  #info .container {
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column-reverse;
+  }
+  #info .container .column,
+  #info .container .testimonials {
+    width: 100%;
+  }
+  #info input[type="submit"] {
+    margin-top: 10px;
+  }
+  section#choose .column {
+    justify-content: space-around;
+  }
+  #footer .block:nth-child(1),
+  #footer .block:nth-child(4) {
+    width: 160px;
+  }
+  #footer .block:nth-child(2),
+  #footer .block:nth-child(3) {
+    width: 195px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  section#about .row .icon {
+    margin-top: 25px;
+    width: 140px;
+  }
+}
+@media only screen and (max-width: 769px) {
+  #mainSlider .slick-dots {
+    bottom: 20px;
+  }
+  #footer .block:nth-child(2),
+  #footer .block:nth-child(3) {
+    width: 425px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #mainSlider .context {
+    backdrop-filter: brightness(0.3);
+    padding: 20px;
+    margin: 0px 30px;
+    width: 100%;
+  }
+  #mainSlider ul.slick-dots {
+    display: none !important;
+  }
+  #tabBTN {
+    top: 0;
+    left: 0;
+  }
+  #mainTab .tabContent h1,
+  #mainTab .tabContent p,
+  #mainTab .tabContent .btns {
+    display: none;
+  }
+  section#about .row .icon {
+    margin-top: 15px;
+    width: 100px;
+  }
+  section#project .content {
+    padding: 15px 15px;
+  }
+  section#project .column .icons {
+    display: none;
+  }
+  section#project .content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  section#project .content p {
+    font-size: 12px;
+  }
+  section#choose {
+    padding: 30px 0;
+  }
+  section#choose .column {
+    row-gap: 25px;
+  }
+  #choose .block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#subscribe .container {
+    justify-content: space-between;
+  }
+  #subscribe form {
+    width: 80%;
+  }
+  #footer .block:nth-child(1),
+  #footer .block:nth-child(2),
+  #footer .block:nth-child(3),
+  #footer .block:nth-child(4) {
+    width: 100%;
+  }
+  #footer ul li a {
+    padding: 5px 0px;
+  }
+  #footBar .container {
+    justify-content: center;
+  }
+  #footBar .copyright a {
+    padding: 0 30px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #mainSlider .context {
+    display: none;
+  }
+  section#project .column .block {
+    width: 100%;
+  }
+  section#project .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#about .row .icon {
+    display: none;
+  }
+  section#about .row h2 {
+    font-size: 25px;
+  }
+  section#project .content {
+    display: none;
+  }
+  #info .slick-Slider {
+    padding: 30px 10px;
+  }
+  section#subscribe .container {
+    justify-content: center;
+  }
+  #subscribe a.logo {
+    display: none;
+  }
+  #subscribe form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  section#about .row h2,
+  section#about .row span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  #subscribe form {
+    flex-direction: column;
+  }
+  #subscribe input[type="email"] {
+    width: 93%;
+    text-align: center;
+  }
+  #subscribe input[type="submit"] {
+    width: 93%;
+  }
+}
