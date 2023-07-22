@@ -30,6 +30,9 @@
     transform: translateX(-30px);
     opacity: 0;
   }
+  body.active {
+    overflow: hidden;
+  }
   header nav ul {
     display: flex;
     align-items: flex-start;
