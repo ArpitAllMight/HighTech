@@ -26,6 +26,7 @@
     $("#hamBurger").click(function () {
       $("header nav").toggleClass("active");
       $(this).toggleClass("active");
+      $("body").toggleClass("active");
     });
     $(".anchorLink").click(function () {
       $("#hamBurger, header nav").removeClass("active");
