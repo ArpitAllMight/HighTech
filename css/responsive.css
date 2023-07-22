@@ -208,12 +208,8 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 360px) {
-  section#about .row h2,
-  section#about .row span {
-    display: none;
-  }
-    #subscribe form {
+@media only screen and (max-width: 430px) {
+  #subscribe form {
     flex-direction: column;
   }
   #subscribe input[type="email"] {
@@ -222,5 +218,11 @@
   }
   #subscribe input[type="submit"] {
     width: 93%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  section#about .row h2,
+  section#about .row span {
+    display: none;
   }
 }
