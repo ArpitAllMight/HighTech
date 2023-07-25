@@ -753,3 +753,6 @@ main.active {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+#popUp .detail p {
+  text-align: justify;
+}
