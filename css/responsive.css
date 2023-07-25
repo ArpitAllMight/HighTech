@@ -93,6 +93,10 @@
     margin-top: 25px;
     width: 140px;
   }
+  #tabs .detail {
+    bottom: -600px;
+    transition: 0.8s all ease;
+  }
 }
 @media only screen and (max-width: 769px) {
   #mainSlider .slick-dots {
