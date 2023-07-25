@@ -90,68 +90,10 @@ div#hamBurger span {
 div#hamBurger span:nth-child(2) {
   margin: 5px 0;
 }
-#mainTab {
+/* #mainTab {
   position: relative;
-}
-#tabBTN {
-  position: absolute;
-  top: 115px;
-  left: 175px;
-  display: flex;
-  column-gap: 15px;
-  align-items: center;
-}
-#tabBTN span {
-  width: 12px;
-  height: 12px;
-  background: var(--white-color);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s all ease;
-}
-#tabBTN span.active {
-  width: 20px;
-  height: 20px;
-  background: var(--grey-color);
-}
-#pictureTab .tabIMG:not(:first-of-type) {
-  display: none;
-}
-/* #mainTab .tabContent {
-  position: absolute;
-  top: 150px;
-  left: 70px;
-  max-width: 58%;
-  padding: 25px;
-  backdrop-filter: blur(5px);
-}
-#mainTab .tabContent h1 {
-  font-size: 50px;
-  line-height: 65px;
-  margin-bottom: 15px;
-}
-#mainTab .btns {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  margin-top: 25px;
-}
-#mainTab .btns a {
-  padding: 5px 15px;
-  transition: 0.3s all ease;
-}
-#mainTab .btn1 {
-  background: var(--grey-color);
-  color: var(--white-color);
-}
-#mainTab .btn1:hover,
-#mainTab .btn2:hover {
-  transform: scale(1.1);
-}
-#mainTab .btn2 {
-  background: var(--white-color);
-  color: var(--grey-color);
 } */
+
 #mainSlider .slideOne {
   background-image: url(../webp/tab1.webp);
   background-position: center;
@@ -414,6 +356,23 @@ section#project .btn a {
 section#project .btn a:hover {
   transform: scale(1.1);
 }
+section#photoSlider h5 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+section#photoSlider .tabContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  column-gap: 10px;
+}
+section#photoSlider .tabContent span {
+  padding: 5px 15px;
+  background: var(--white-color);
+  color: black;
+  cursor: pointer;
+}
 section#choose {
   padding: 50px 0;
   background: var(--grey-color);
@@ -474,7 +433,77 @@ section#choose span {
 }
 section#choose .counter i {
   font-size: 18px;
-  color: white;
+  color: var(--white-color);
+}
+
+/* Tabs */
+section#tabs {
+  margin-top: 45px;
+}
+div#tabsNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey-color);
+}
+div#tabsNav span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white-color);
+  padding: 10px 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  column-gap: 5px;
+}
+div#tabsNav span.selected,
+div#tabsNav span:hover {
+  background-color: var(--white-color);
+  color: black;
+}
+#tabsContent {
+  overflow: hidden;
+}
+#tabsContent .tab-content:not(:first-of-type) {
+  display: none;
+}
+section.sld-wrp {
+  margin-top: 40px;
+}
+#tabs .tab-content {
+  position: relative;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.swiper-slide {
+  width: 25%;
+  height: 100%;
+}
+.swiper-slide-thumb-active {
+  opacity: 1;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 15px;
+  font-weight: 900;
+  background: black;
+  color: var(--white-color);
+  padding: 10px;
 }
 section#info {
   padding: 50px 0;
@@ -573,7 +602,7 @@ input[type="submit"]:hover {
   width: 50%;
 }
 #subscribe {
-  padding: 20px 0;
+  padding: 15px 0;
   background: black;
 }
 section#subscribe .container {
@@ -582,7 +611,7 @@ section#subscribe .container {
   justify-content: space-around;
 }
 #subscribe a.logo {
-  color: white;
+  color: var(--white-color);
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 600;
@@ -674,9 +703,53 @@ section#subscribe .container {
   position: fixed;
   bottom: 45px;
   right: 10px;
+  z-index: 1;
 }
 #scrollToTop i {
   font-size: 25px;
   color: #ac4425;
   cursor: pointer;
+}
+#tabs .clkBtn {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: var(--grey-color);
+  color: var(--white-color);
+  text-align: left;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#popUp {
+  display: flex;
+  justify-content: center;
+}
+#popUp h6 {
+  text-transform: uppercase;
+}
+#popUp .detail img.cross {
+  width: 30px;
+  cursor: pointer;
+}
+#popUp .container {
+  width: 95%;
+  position: fixed;
+  padding: 20px 25px;
+  background: lightgoldenrodyellow;
+  bottom: -100%;
+  z-index: 1;
+  transition: 0.6s all ease;
+}
+#popUp .container.active {
+  bottom: 0px;
+}
+main.active {
+  pointer-events: none;
+}
+#popUp .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
