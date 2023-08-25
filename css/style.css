@@ -90,10 +90,10 @@ div#hamBurger span {
 div#hamBurger span:nth-child(2) {
   margin: 5px 0;
 }
-/* #mainTab {
-  position: relative;
-} */
 
+#mainSlider .block {
+  height: 93vh;
+}
 #mainSlider .slideOne {
   background-image: url(../webp/tab1.webp);
   background-position: center;
@@ -172,6 +172,17 @@ div#hamBurger span:nth-child(2) {
 }
 #mainSlider .slick-dotted.slick-slider {
   margin-bottom: 0px;
+}
+#mainSlider .slick-prev {
+  left: 20px;
+  z-index: 1;
+}
+#mainSlider .slick-next {
+  right: 20px;
+}
+#mainSlider .slick-prev:before,
+#mainSlider .slick-next:before {
+  color: brown;
 }
 #slick {
   padding-top: 30px;
@@ -489,10 +500,6 @@ section.sld-wrp {
 .swiper-slide {
   background-size: cover;
   background-position: center;
-}
-.swiper-slide {
-  width: 25%;
-  height: 100%;
 }
 .swiper-slide-thumb-active {
   opacity: 1;
