@@ -4,10 +4,10 @@ $(document).ready(function () {
     $("#footer").load("assets/footer.html");
   });
   $(".main-Slider").slick({
-    arrows: false,
+    arrows: true,
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
   });
@@ -17,15 +17,17 @@ $(document).ready(function () {
     nextArrow: ".arrowSlick .rightArrow",
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 885,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
         },
       },
@@ -46,9 +48,11 @@ $(document).ready(function () {
     arrows: true,
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
     prevArrow: ".slickArrows .fa-chevron-left",
     nextArrow: ".slickArrows .fa-chevron-right",
   });
