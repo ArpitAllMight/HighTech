@@ -649,7 +649,7 @@ section#subscribe .container {
 }
 #footer .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   row-gap: 15px;
   flex-wrap: wrap;
 }
